@@ -37,12 +37,12 @@ for part in parts:
         source_addr_ton=smpplib.consts.SMPP_TON_INTL,
         #source_addr_npi=smpplib.consts.SMPP_NPI_ISDN,
         # Make sure it is a byte string, not unicode:
-        source_addr=bytes(FROM_PHONE_NUM, 'utf-8'),
+        source_addr=FROM_PHONE_NUM,
 
         dest_addr_ton=smpplib.consts.SMPP_TON_INTL,
         #dest_addr_npi=smpplib.consts.SMPP_NPI_ISDN,
         # Make sure thease two params are byte strings, not unicode:
-        destination_addr=bytes(TO_PHONE_NUM, 'utf-8'),
+        destination_addr=TO_PHONE_NUM,
         short_message=part,
 
         data_coding=encoding_flag,
