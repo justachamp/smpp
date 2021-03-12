@@ -10,13 +10,24 @@
 SMPP library for Python. Forked from [Google Code](https://code.google.com/p/smpplib/).
 
 ```
-1.Create Virtual Environment and activate it.
+1. Clone this repository.
+    
+    git clone https://github.com/justachamp/smpp.git
+    
+    cd smpp
+    
+3.Create Virtual Environment and activate it.
 
     python3 -m venv venv
 
-    source venv/bin/activate
+    source venv/bin/activate # for Unix
+    ./venv/Scripts/activate # for Windows
 
 2. Install requirements
 
     pip install -r requirements.txt
+
+3. Change all the constants in examp.py and run it
+
+
 ```
